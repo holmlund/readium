@@ -46,9 +46,9 @@
 {{! The main content area on the homepage }}
 <main class="content" role="main">
     
-    <a href="/">Back to Overview</a>
+    <a href="/">Tillbaka till förstasidan</a>
 
-    <h5 class="index-headline normal"><span>Article list for {{tag.name}}</span></h5>
+    <h5 class="index-headline normal"><span>Artiklar taggade med {{tag.name}}</span></h5>
 
     <div class="cf frame">
     {{#foreach posts}}
@@ -60,7 +60,7 @@
                 <section class="post-excerpt" itemprop="description">
                     <p>{{excerpt characters="150"}}&hellip;</p>
                 </section>
-                <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</div>
+                <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="med "}}</div>
             </div>
         </article>
     {{/foreach}}
@@ -73,10 +73,10 @@
 </main>
 
 <footer class="site-footer">
-    <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+    <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Prenumerera!</span></a>
     <div class="inner">
-         <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
-         <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+         <section class="copyright">Allt innehåll copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; Alla rättigheter reserverade.</section>
+         <section class="poweredby">Sajten drivs med <a class="icon-ghost" href="http://ghost.org"></a> och stora mängder kaffe.</section>
     </div>
 </footer>
 
