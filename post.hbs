@@ -22,9 +22,9 @@
                 <h1 class="post-title">{{{title}}}</h1>
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
-                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> on
+                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> den
                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
-                    {{tags prefix=", tagged on " separator=", "}}
+                    {{tags prefix=", taggad med " separator=", "}}
                 </div>
                 <center><a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a></center>
             </div>
@@ -90,9 +90,9 @@
                 <h1 class="post-title">{{{title}}}</h1>
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
-                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> on
+                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> den
                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
-                    {{tags prefix=", tagged on " separator=", "}}
+                    {{tags prefix=", taggad med " separator=", "}}
                 </div>
             </div>
         </div>
@@ -132,23 +132,23 @@
             
             <div class="bottom-teaser cf">
                 <div class="isLeft">
-                    <h5 class="index-headline featured"><span>Written by</span></h5>
+                    <h5 class="index-headline featured"><span>Skrivet av</span></h5>
                     <section class="author">
                         <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
                         <h4>{{author.name}}</h4>
                         <p class="bio">{{author.bio}}</p>
                         <hr>
-                        <p class="published">Published <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></p>
+                        <p class="published">Publicerad <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time></p>
                     </section>
                 </div>
                 {{/post}}
                 <div class="isRight">
-                    <h5 class="index-headline featured"><span>Supported by</span></h5>
+                    <h5 class="index-headline featured"><span>Mer</span></h5>
                     <footer class="site-footer">
-                        <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org"> Ghost</a></section>
-                        <a class="subscribe" href="{{@blog.url}}/rss/"><span class="tooltip">You should subscribe to my RSS feed.</span></a>
+                        <section class="poweredby">Sajten drivs med <a class="icon-ghost" href="http://ghost.org"></a> och stora mängder kaffe.</section>
+                        <a class="subscribe" href="{{@blog.url}}/rss/"><span class="tooltip">Prenumerera gärna på min RSS-feed.</span></a>
                         <div class="inner">
-                             <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}}<br>All rights reserved.</section>
+                             <section class="copyright">Copyright &copy; <a href="{{@blog.url}}/">{{@blog.title}}</a> {{date format="YYYY"}}<br>Alla rättigheter reserverade.</section>
                              
                         </div>
                     </footer>
