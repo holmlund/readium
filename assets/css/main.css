@@ -641,3 +641,24 @@ body {
       border-radius: 999em;
       line-height: 44px;
       padding: 0 18px; }
+
+.photocontainer {
+  -webkit-column-width: 250px;
+  -moz-column-width: 250px;
+  column-width: 250px;
+  -webkit-column-gap: 1px;
+  -moz-column-gap: 1px;
+  column-gap: 1px;
+  line-height: 0.8;
+}
+
+.photocontainer figcaption {
+  display: none;
+}
+
+.photocontainer figure {padding:0 0 0 0 !important;}
+
+.photoitem {
+  display: inline-block;
+  color: white;
+}

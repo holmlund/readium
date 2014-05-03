@@ -10,7 +10,7 @@
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
         
-        {{#has tag="articleImage"}}
+        {{#has tag="bild"}}
         
         <div class="article-image">
             <div class="post-image-image">
@@ -43,7 +43,7 @@
             
                         $(".post-image-image").css('background-image', 'url('+url+')');
             
-                        img.remove();
+                        {{! img.remove();}}
                     });
             
                     var $window = $(window),
