@@ -937,3 +937,14 @@ body {
     background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
   }
 }
+
+.post-custom-links {
+    margin: 10px 0 0px;
+    text-align: center;
+    color: #cccccc; }
+.post-custom-links a {
+      text-decoration: none;
+      color: #999999; }
+.post-custom-links a:hover {
+        color: #333333; }
+
