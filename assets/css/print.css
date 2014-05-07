@@ -1,12 +1,12 @@
 .article-image{
-page-break-after:never
+page-break-after:never;
 }
 .post-content, 
 .bottom-teaser.cf{
-  padding-top:0!important
+  padding-top:0!important;
 }
 .bottom-teaser.cf{
-  margin:0
+  margin:0;
 }
 .post-reading, 
 .bottom-teaser.cf .isRight, 
