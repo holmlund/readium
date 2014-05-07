@@ -23,6 +23,15 @@ module.exports = function(grunt) {
             }
         },
 
+        legacssy: {
+          dist: {
+          src: [
+          'src/css/production.css',
+          ],
+          dest:'assets/css/production-legacy.css', 
+        }
+       },
+
         autoprefixer: {
             options: {
             browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 8', 'ie 9', 'ie 10']
@@ -59,9 +68,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
-
+    grunt.loadNpmTasks('grunt-legacssy');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'autoprefixer','uglify', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'legacssy', 'autoprefixer','uglify', 'cssmin']);
 
 };
