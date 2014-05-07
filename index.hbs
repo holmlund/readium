@@ -117,6 +117,11 @@
 </main>
 
 <footer class="site-footer">
+
+    <form id="search">
+                <input id="search-field" placeholder="Sök"/>
+    </form>
+    <section id="results"></section>
     <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip"> Prenumerera!</span></a>
     <div class="inner">
          <section class="copyright">Allt innehåll copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; Alla rättigheter reserverade.</section>

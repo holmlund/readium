@@ -59,6 +59,14 @@
      <script src="{{asset "js/production.min.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $("#search-field").ghostHunter({
+            results : "#results",
+            onKeyUp : true,
+            zeroResultsInfo : false,
+            info_template   : "<p>Resultat: {{amount}}</p>"
+        });
+    </script>
     <script type="text/javascript">
     $(".photoitem").fancybox();
     </script>
