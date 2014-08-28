@@ -1,0 +1,89 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+
+<script>
+    (function ($) {
+        "use strict";
+
+        $(document).ready(function(){
+
+            var $window = $(window),
+                $image = $('.teaserimage-image');
+            $window.on('scroll', function() {
+                var top = $window.scrollTop();
+
+                if (top < 0 || top > 1500) { return; }
+                $image
+                    .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+                    .css('opacity', 1-Math.max(top/700, 0));
+            });
+            $window.trigger('scroll');
+
+        });
+
+    }(jQuery));
+</script>
+
+
+{{#author}}
+<div class="teaserimage">
+    <div class="teaserimage-image" style="background-image: url({{cover}})">
+        Teaser Image
+    </div>
+</div>
+
+<header class="blog-header">
+    {{#if image}}<a class="blog-logo" href="#" style="background-image: url({{image}})">{{name}}</a>{{/if}}
+    <h1 class="blog-title">{{name}}</h1>
+    <h2 class="blog-description">{{bio}}</h2>
+    <div class="custom-links">
+                                <a href="http://www.linkedin.com/in/davidholmlund" target="_blank">
+                                <i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+                                <a href="https://plus.google.com/+DavidHolmlund?rel=author" target="_blank">
+                                <i class="fa fa-google-plus-square"></i></a>&nbsp;&nbsp;
+                                <a href="http://www.facebook.com/davidholmlund" target="_blank">
+                                <i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+                                <a href="https://github.com/holmlund" target="_blank">
+                                <i class="fa fa-github"></i></a>&nbsp;&nbsp;
+                                <a href="http://www.twitter.com/davidholmlund" target="_blank">
+                                <i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
+                                <a href="http://www.instagram.com/davidholmlund" target="_blank">
+                                <i class="fa fa-instagram"></i></a>&nbsp;&nbsp;
+                                <a href="http://davidholmlund.se/rss" target="_blank">
+                                <i class="fa fa-rss"></i></a>&nbsp;&nbsp;
+                                <a href="mailto:david.holmlund@gmail.com" target="_blank">
+                                <i class="fa fa-envelope"></i></a>&nbsp;&nbsp;                        
+    </div>
+</header>
+
+
+{{! The main content area on the homepage }}
+
+<main class="content tag-list" role="main">
+    
+    
+    {{/author}}
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip;</p>
+        </section>
+    </article>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    
+    <h5 class="index-headline bottom"><span>{{pagination}}</span></h5>
+
+</main>

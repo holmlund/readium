@@ -22,7 +22,7 @@
                 <h1 class="post-title">{{{title}}}</h1>
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
-                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> den
+                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author}}</h4> den
                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
                     {{tags prefix=", taggad med " separator=", "}}
                 </div>
@@ -90,7 +90,7 @@
                 <h1 class="post-title">{{{title}}}</h1>
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div>
-                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author.name}}</h4> den
+                    <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{author}}</h4> den
                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
                     {{tags prefix=", taggad med " separator=", "}}
                 </div>
@@ -138,7 +138,7 @@
                     <h5 class="index-headline featured"><span>Skrivet av</span></h5>
                     <section class="author">
                         <a href="http://davidholmlund.se/om-mig"><div class="author-image" style="background-image: url({{author.image}})">Blog Logo</div></a>
-                        <h4>{{author.name}}</h4>
+                        <h4>{{author}}</h4>
                         <p class="bio">{{author.bio}}</p>
                         
                         <hr>
