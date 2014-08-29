@@ -1215,7 +1215,12 @@ body {
 .veder {
   display: inline-block;
   vertical-align: bottom;
-  max-height: 22px;
+  max-height: 19px;
+}
+
+.veder img {
+  height: 16px;
+  width: 16px;
 }
 
 .browsehappy {
