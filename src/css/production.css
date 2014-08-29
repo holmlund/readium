@@ -242,6 +242,7 @@ body {
 .tag-articleimage .post-reading {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), 0px 0px 1px rgba(0, 0, 0, 0.5); }
+.post-tag-bild {display:none;}
 
 .site-footer {
   margin: 0 auto;
@@ -520,6 +521,12 @@ body {
         padding-bottom: 32px; } }
     .post .bottom-teaser .isLeft .index-headline {
       padding-bottom: 32px; }
+    .post .bottom-teaser .isLeft a {
+    color: black;
+    text-decoration: none; }
+    .post .bottom-teaser .isLeft a:hover {
+    color: #333333;
+    text-decoration: underline; }  
     .post .bottom-teaser .isLeft .author-image {
       display: block;
       width: 80px;
@@ -1000,6 +1007,8 @@ body {
     margin: 0;
     font-weight: 500;
 }
+
+.veder {display:inline-block;vertical-align:bottom;max-height:22px;}
 
 
 /**

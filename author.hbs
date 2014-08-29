@@ -31,7 +31,7 @@
 
 {{#author}}
 <div class="teaserimage">
-    <div class="teaserimage-image" style="background-image: url({{cover}})">
+    <div class="teaserimage-image" style="background-image: url({{@blog.cover}})">
         Teaser Image
     </div>
 </div>
@@ -56,7 +56,8 @@
                                 <a href="http://davidholmlund.se/rss" target="_blank">
                                 <i class="fa fa-rss"></i></a>&nbsp;&nbsp;
                                 <a href="mailto:david.holmlund@gmail.com" target="_blank">
-                                <i class="fa fa-envelope"></i></a>&nbsp;&nbsp;                        
+                                <i class="fa fa-envelope"></i></a>&nbsp;&nbsp;   
+                                <a href="http://vedervisp.se"> <i class="veder"><img src="/veder-square-icon-24.png"></i></a>              
     </div>
 </header>
 
@@ -73,7 +74,7 @@
     <article class="{{post_class}}">
         <header class="post-header">
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="| "}}</span>
         </header>
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>

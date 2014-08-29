@@ -33,11 +33,11 @@
     <a href="http://davidholmlund.se/rss" target="_blank">
     <i class="fa fa-rss"></i></a>&nbsp;&nbsp;
     <a href="mailto:david.holmlund@gmail.com" target="_blank">
-    <i class="fa fa-envelope"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <i class="fa fa-envelope"></i></a>&nbsp;&nbsp;
+    <a href="http://vedervisp.se"> <i class="veder"><img src="/veder-square-icon-24.png"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;
 
     
-        <a href="/om-mig/"> Om mig </i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-      
+        <a href="/om-mig/"> Om mig </i></a>
     </div>
 </header>
 
@@ -80,7 +80,7 @@
                         <section class="post-excerpt" itemprop="description">
                             <p>{{excerpt characters="130"}}&hellip;</p>
                         </section>
-                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">{{tags prefix="taggad med "}}</span></div>
+                        <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
                     </div>
                 </article>
             {{/if}}
@@ -103,7 +103,7 @@
                         <p>{{excerpt characters="130"}}&hellip;</p>
                     </section>
                     <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}
-                    </time><span class="post-tags-set">{{tags prefix="taggad med "}}</span></div>
+                    </time><span class="post-tags-set">| {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span></div>
                 </div>
             </article>
         {{/if}}
