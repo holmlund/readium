@@ -6,7 +6,9 @@
 
 {{! The big featured header on the homepage, with the site logo and description }}
 
-
+<!--[if lt IE 9]>
+            <p class="browsehappy">Hej, du använder dig av en <strong>gammal</strong> webbläsare som kan ge en sämre webbupplevelse. Besök gärna <a href="http://browsehappy.com/">denna sida</a> för att ta reda på vad du kan göra åt saken.</p>
+        <![endif]-->
 <div class="teaserimage">
     <div class="teaserimage-image" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         Teaser Image

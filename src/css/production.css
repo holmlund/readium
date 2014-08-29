@@ -1010,6 +1010,8 @@ body {
 
 .veder {display:inline-block;vertical-align:bottom;max-height:22px;}
 
+.browsehappy {margin: 0.2em 0;background: orange;color: #000;padding: 0.2em 0;}
+p.browsehappy {padding-left:65px;}
 
 /**
  * Obsidian style
